@@ -1,0 +1,11 @@
+body {
+    overflow: hidden;
+}
+
+#editor {
+    margin: 0;
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    font-size: 24px;
+}

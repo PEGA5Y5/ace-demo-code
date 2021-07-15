@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Editor</title>
+  <link rel="stylesheet" href="assets/style.css"> 
+</head>
+<body>
+    <div class="menu-bar">
+        <h2 id="file-name">demofile</h2>
+        <select id="lang">
+            <option selected value="javascript">Javascript</option>
+            <option value="c_cpp">C/C++</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+        </select>
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+        <button id="download">Download</button>
+        <button id="save">Save</button>
+    </div>
+    <pre id="editor">function foo(items) {
+        var i;
+        for (i = 0; i &lt; items.length; i++) {
+            alert("Ace Rocks " + items[i]);
+        }
+    }</pre>
+
+    <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/app.js" type="text/javascript" charset="utf-8"></script>
+    
+</body>
+</html>
